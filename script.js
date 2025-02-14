@@ -60,37 +60,3 @@ setInterval(function() {
   IMAGE_INDEX++;
 }, 5000)
 
-// info below here
-const info = document.querySelector('#info');
-const infoClose = document.querySelector('#info #close');
-infoClose.addEventListener('click', slideOut);
-const aboutIcon = document.querySelector('#about')
-aboutIcon.addEventListener('click', slideIn)
-
-function slideOut() {
-  let initialHeight = info.clientHeight;
-  var slideTimer = setInterval(function () {
-    if (initialHeight <= 0) {
-      clearInterval(slideTimer);
-    }
-
-    initialHeight -= 20;
-    info.style.height = `${initialHeight}px`;
-  }, 20);
-}
-
-function slideIn() {
-  if (info.clientHeight > 0) {
-    return null;
-  }
-
-  let initialHeight = info.clientHeight;
-  var slideTimer = setInterval(function () {
-    if (initialHeight >= window.innerHeight / 2) {
-      clearInterval(slideTimer);
-    }
-
-    initialHeight += 20;
-    info.style.height = `${initialHeight}px`;
-  }, 20);
-}

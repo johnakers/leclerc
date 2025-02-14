@@ -78,39 +78,6 @@ body {
 }
 
 #footer a:hover {
-  color: #000;
-}
-
-#info {
-  background-color: #FFF;
-  height: 0px;
-  position: fixed;
-    bottom: 0;
-    left: 0;
-  width: 100vw;
-  z-index: 200;
-}
-
-#info h1 {
-  font-family: DidotRegular;
-}
-
-#info p  {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: Helvetica, sans-serif;
-}
-
-#info .inner {
-  margin: auto;
-  width: calc(100% - 20px);
-}
-
-#info #close {
-  cursor: pointer;
-}
-
-#info a {
-  color: #000;
-  font-weight: 700;;
+  background-color: #333;
+  color: #FFF;
 }
